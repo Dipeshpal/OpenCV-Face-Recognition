@@ -92,15 +92,19 @@ def fit_classifire():
     return clf
 
 
-def choice(ch):
+def choice():
     """
     This will Create Dataset, Train and Test the model, Check input face
     :param ch: choice
     :return: nothing
     """
+    print("Enter a choice 1/2/3")
+    print("1 for automatically detect whether a model present or not and if present then just check input image")
+    print("2 for create model forcefully nad overwrite existing model")
+    print("3 for check image")
+    print("Others are invalid options")
 
-    choice = ch
-
+    choice = int(input("Enter a choice 1/2/3"))
     flag = 0
 
     try:
@@ -158,5 +162,5 @@ def choice(ch):
         print("Invalid input try again")
 
 
-# Call choice funtion with different option 1/2/3 and understand
-choice(2)
+# Call choice
+choice()
