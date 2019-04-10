@@ -1,0 +1,7 @@
+Put video file in same folder and then run split.py
+
+It will ask you for enter folder name (where you want to save video) and video (source) name.
+
+And it will genrate frame from video in your folder.
+
+Now just delete last frame from folder because last frame is corroupted. You have to do it manually or you can write code for this.
