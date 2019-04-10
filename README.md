@@ -13,7 +13,7 @@ Recommended Prerequisites-
 * Miniconda or
 * Python 3.x
 
-I have following Python library  installed on miniconda-
+Install following (You can install latest versions)
 
 * numpy==1.14.5
 * opencv-contrib-python==4.0.0.21
@@ -91,21 +91,22 @@ Face_Recognition
  
 ## How to use-
 1. First download this [repository](https://github.com/Dipeshpal/OpenCV-Face-Recognition).
+   - Now extract it. You can also activate virtual environment at this step or at step 4.
 
 2. Now you need to create dataset, you can create dataset very easily. Read and follow following instruction-
    - Create a video of your face upto 30-60 seconds long.
-   - Put that video file in "Video-to-Image-Split-master" folder.
+   - Put that video file in "Video-to-Image-Split" folder.
    - Run "split.py"
    ```
    python split.py
    ```
      - Enter folder name you want to create
      - Enter your video file name
-    It will now create Folder in "Video-to-Image-Split-master" directory containing images. This script will capture frames from video and save those frames in Folder.
+    It will now create Folder in "Video-to-Image-Split-master" directory containing images. This script will capture frames from video and save those frames in Folder. Make sure you delete last frame (it is corroupted) manually or you can auomate it with python.
 
-3. Now copy these folder and paste it on 'images_dataset" directory in "Face_Recognition" project.
+3. Now copy these folder and paste it on 'images_dataset" directory in "Face_Recognition" project manually or you can auomate it with python.
 
-4. Activate virtual environment for this project. Open command prompt in "Face_Recogintiion" folder (project root directory) and type followning in command prompt.
+4. Activate virtual environment for this project. Open command prompt in "Face_Recogintiion" folder (project root directory) and type followning in command prompt. You can also use pycharm or any other editor to activate virtual environment.
    ```
    venv\Scripts\activate
    ```
@@ -119,4 +120,8 @@ Face_Recognition
    ```
    python face_recognition.py
    ```
+   
+7. Now it will ask you to choose choice 1/2/3 and just run it and see what these choice are.
+
 This will do all the things for you. It will use images in "images_dataset" directory to create dataset (dataset of image with features and labels, train and test dataset with features and labels). Then it will now train the model with train dataset and create model then test the model with test dataset also find accuracy and check "capture_image.jpg" with trained model.
+
